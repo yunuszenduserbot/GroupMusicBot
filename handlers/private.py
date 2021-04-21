@@ -7,29 +7,28 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
+    await message.reply_sticker("CAACAgUAAxkBAAEJX5NgelpPxIp7TxBi31AWY0e6awyNoAACrwIAAiZaqFetusa6iC_gHx8E")
+    await message.reply_sticker("CAACAgUAAxkBAAEJc-tgf8LIRTgsMIDXr2-IECydFbbmGwACfAMAAiyLoFcuriTh3WiCrh8E")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
+        f"""**❖ Hy kamu, saya adalah __[Mighty Music Assistant Bot](https://t.me/MightyMusic_bot)__ 🎶**
 
-I can play music in your group's voice call. Developed by [Jason](https://t.me/ImJanindu).
-
-Add me to your group and play music freely!**
+❖ Saya bisa memutar musik di **VCG GROUP** atau __panggilan suara grup Anda__. Dikembangkan Oleh** __[Yunus](https://t.me/ZendYNS)__❖ Tambahkan** __[Mighty Music Assistant](https://t.me/MightyMusic_Assistant)__ dan __[Mighty Music Bot](https://t.me/MightyMusic_bot)__ ke grup Anda, dan rasakan sensasi mendengar musik di **VCG Group** anda!!
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/ImJanindu/GroupMusicBot")
+                        "📚 Info Penting 📚", url="https://telegra.ph/Mighty-Music-Assistant-04-20")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/InfinityBOTs_Support"
+                        "📇 Quotes Official", url="https://t.me/Quotes_Channel_Official"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs"
+                        "Tele Story 📇", url="https://t.me/telee_story"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
+                        "💠 Pemilik 💠", url="https://t.me/ZendYNS"
                     )]
             ]
         ),
@@ -38,12 +37,12 @@ Add me to your group and play music freely!**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Group Music Player Online ✅**""",
+      await message.reply_text("""**Mighty Bot Music Berhasil Diaktifkan ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs")
+                        "💠 Group 💠", url="https://t.me/Cari_Teman_Online_Group")
                 ]
             ]
         )
