@@ -12,7 +12,9 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**❖ Hy kamu, saya adalah __[Mighty Music Assistant Bot](https://t.me/MightyMusic_bot)__ 🎶**
 
-❖ Saya bisa memutar musik di **VCG GROUP** atau __panggilan suara grup Anda__. Dikembangkan Oleh** __[Yunus](https://t.me/ZendYNS)__❖ Tambahkan** __[Mighty Music Assistant](https://t.me/MightyMusic_Assistant)__ dan __[Mighty Music Bot](https://t.me/MightyMusic_bot)__ ke grup Anda, dan rasakan sensasi mendengar musik di **VCG Group** anda!!
+❖ Saya bisa memutar musik di **VCG GROUP** atau __panggilan suara grup Anda__. Dikembangkan Oleh** __[Yunus](https://t.me/ZendYNS)__
+
+❖ Tambahkan** __[Mighty Music Assistant](https://t.me/MightyMusic_Assistant)__ dan __[Mighty Music Bot](https://t.me/MightyMusic_bot)__ ke grup Anda, dan rasakan sensasi mendengar musik di **VCG Group** anda!!
         """,
         reply_markup=InlineKeyboardMarkup(
             [
