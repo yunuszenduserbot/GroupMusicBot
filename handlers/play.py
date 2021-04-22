@@ -19,7 +19,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing** sounds...")
+    lel = await message.reply("🔄 **Memproses** lagu tersebut...")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -27,8 +27,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🔊 Channel",
-                        url="https://t.me/Infinity_BOTs")
+                        text="INFO 🎶",
+                        url="https://t.me/ZendYNS")
                    
                 ]
             ]
