@@ -8,7 +8,7 @@ from helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAEJX5NgelpPxIp7TxBi31AWY0e6awyNoAACrwIAAiZaqFetusa6iC_gHx8E")
-    await message.reply_sticker("CAACAgUAAxkBAAEJc-tgf8LIRTgsMIDXr2-IECydFbbmGwACfAMAAiyLoFcuriTh3WiCrh8E")
+    await message.reply_sticker("CAACAgUAAxkBAAEJhiRghU-HBoDo2l62Hsreb8jG3YAHzwACZAIAAgZVKFSjwwmhSBUWsh8E")
     await message.reply_text(
         f"""**❖ Hy kamu, saya adalah __[Mighty Music Assistant Bot](https://t.me/MightyMusic_bot)__ 🎶**
 
