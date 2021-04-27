@@ -22,7 +22,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎 **Sedang Mencari** lagu ini...")
+    lel = await message.reply("🔎 **Sedang Mencari** lagu tersebut...")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -61,7 +61,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
+                        text="Buka Di YouTube 🎬",
                         url=f"{url}")
                    
                 ]
@@ -72,7 +72,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
+                        text="Buka Di Youtube 🎬",
                         url=f"{url}")
                    
                 ]
@@ -101,7 +101,8 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="▶️ **Sedang Memutar** lagu tersebut di VCG req by {} via YouTube Music 😜".format(
+        caption="🎧 **Sedang Memutar** lagu tersebut di VCG 
+                 👤 req by {} __via YouTube Music__ 🎬".format(
         message.from_user.mention()
         ),
     )
