@@ -62,7 +62,7 @@ async def play(_, message: Message):
         photo="https://telegra.ph/file/a4fa687ed647cfef52402.jpg",
         reply_markup=keyboard,
         caption="🎧 **Memainkan** musik tersebut di VCG.
-                 👤 Request by {}!".format(
+👤 Request by {}!".format(
         message.from_user.mention()
         ),
     )
