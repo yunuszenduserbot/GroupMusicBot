@@ -102,7 +102,8 @@ async def play(_, message: Message):
         photo=thumb_name,
         reply_markup=keyboard,
         caption="🎧 **Sedang Memutar** lagu tersebut di VCG 
-                 👤 req by {} __via YouTube Music__ 🎬".format(
+
+👤 req by {} __via YouTube Music__ 🎬".format(
         message.from_user.mention()
         ),
     )
