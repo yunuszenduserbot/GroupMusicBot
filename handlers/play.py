@@ -55,13 +55,14 @@ async def play(_, message: Message):
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
-        await lel.edit(f"#⃣ **Queued** at position {position}!")
+        await lel.edit(f"#⃣ **Dalam Antrian** di posisi {position}!")
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
         photo="https://telegra.ph/file/a4fa687ed647cfef52402.jpg",
         reply_markup=keyboard,
-        caption="▶️ **Memainkan** musik tersebut di VCG. Request by {}!".format(
+        caption="🎧 **Memainkan** musik tersebut di VCG.
+                 👤 Request by {}!".format(
         message.from_user.mention()
         ),
     )
