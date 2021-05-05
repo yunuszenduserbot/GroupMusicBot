@@ -22,7 +22,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎 **Sedang Mencari** lagu tersebut...")
+    lel = await message.reply("🔎 **Sedang Mencari** **__lagu tersebut__**...")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -33,7 +33,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Memproses** musik tersebut...")
+    await lel.edit("🎵 **Memproses** **__musik tersebut__**...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -52,7 +52,7 @@ async def play(_, message: Message):
 
     except Exception as e:
         lel.edit(
-            "❌ Song not found.\n\nTry another song or maybe spell it properly."
+            "❌ Lagu tidak ditemukan.\n\nCoba cari lagu lain atau eja dengan benar!!."
         )
         print(str(e))
         return
@@ -64,9 +64,16 @@ async def play(_, message: Message):
                         text="Buka Di YouTube 🎬",
                         url=f"{url}")
                    
-                ]
-            ]
-        )
+              ],[ 
+                    InlineKeyboardButton( 
+                        "💭 Group Support", url="https://t.me/KingUserbotSupport" 
+                  ), 
+                    InlineKeyboardButton( 
+                        "Creator 👨‍💻", url="https://t.me/ZendYNS" 
+                  )
+              ] 
+          ] 
+      )
 
     keyboard2 = InlineKeyboardMarkup(
             [
@@ -75,9 +82,16 @@ async def play(_, message: Message):
                         text="Buka Di Youtube 🎬",
                         url=f"{url}")
                    
-                ]
-            ]
-        )
+                ],[ 
+                    InlineKeyboardButton( 
+                        "💭 Group Support", url="https://t.me/KingUserbotSupport" 
+                  ), 
+                    InlineKeyboardButton( 
+                        "Creator 👨‍💻", url="https://t.me/ZendYNS" 
+                  )
+              ] 
+          ] 
+      )
 
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
 
@@ -101,7 +115,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="🎧 **Sedang Memutar** __lagu__ tersebut di **VCG**. __Req by__ {} __via YouTube Music__ 🎬".format(
+        caption="🎧 **Sedang Memainkan** __lagu__ tersebut di __**VCG**__. __Req by__ {} __via YouTube Music__ 🎬".format(
         message.from_user.mention()
         ),
     )
