@@ -22,7 +22,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 **__Mencari lagu tersebut__**...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -41,11 +41,11 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "❌ Tidak ditemukan.\n\nCoba ketik dgn benar atau cari lagu lain."
         )
         print(str(e))
         return
-    m.edit("Downloading the song by @MightyMusic_bot...")
+    m.edit("Mendapatkan lagu tersebut by @MightyMusic_bot...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
