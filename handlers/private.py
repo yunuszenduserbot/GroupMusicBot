@@ -10,27 +10,30 @@ async def start(_, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAEJX5NgelpPxIp7TxBi31AWY0e6awyNoAACrwIAAiZaqFetusa6iC_gHx8E")
     await message.reply_sticker("CAACAgUAAxkBAAEJhiRghU-HBoDo2l62Hsreb8jG3YAHzwACZAIAAgZVKFSjwwmhSBUWsh8E")
     await message.reply_text(
-        f"""**❖ Hy kamu, saya adalah __[Mighty Music Assistant Bot](https://t.me/MightyMusic_bot)__ 🎶**
+        f"""**┗┓| RASCALS BOT MUSIK | ┏┛**
 
-❖ Saya bisa memutar musik di **VCG GROUP** atau __panggilan suara grup Anda__. Dikembangkan Oleh** __[Yunus](https://t.me/ZendYNS)__
+**Hallo kamu 🙋‍♂**
+Nama saya adalah __[Mighty Music Asssistant Bot](https://t.me/mightymusic_bot)__
+Saya bisa memutar musik di Voice Call Grup kamu
+━━━━━━━━━━━━━━━━━━━━
+Dikelola oleh **[Yunus Zend](https://t.me/ZendYNS)** 👨‍💻
 
-❖ Tambahkan** __[Mighty Music Assistant](https://t.me/MightyMusic_Assistant)__ dan __[Mighty Music Bot](https://t.me/MightyMusic_bot)__ ke grup Anda, dan rasakan sensasi mendengar musik di **VCG Group** anda!!
+❖ **Tambahkan __[Mighty Music Assistant](https://t.me/mightymusic_assistant)__ **dan** __[Mighty Music Bot](https://t.me/mightymusic_bot)__ ke grup Anda, dan rasakan sensasi mendengar musik di VC Group anda!!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Info Penting 📚", url="https://telegra.ph/Mighty-Music-Assistant-04-20")
+                        "🎧 Perintah 🎧", url="https://t.me/infoseputarbot/3")
                   ],[
                     InlineKeyboardButton(
-                        "📇 Quotes Official", url="https://t.me/Quotes_Channel_Official"
+                        "💭 Grup", url="https://t.me/KingUserbotSupport"
                     ),
                     InlineKeyboardButton(
-                        "Tele Story 📇", url="https://t.me/telee_story"
-                    )
-                ],[ 
+                        "👨‍💻 Creator 👨‍💻", url="https://t.me/ZendYNS"
+                    ),
                     InlineKeyboardButton(
-                        "💠 Pemilik 💠", url="https://t.me/ZendYNS"
+                        "Channel 🔉", url="https://t.me/infoseputarbot"
                     )]
             ]
         ),
