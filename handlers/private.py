@@ -33,7 +33,7 @@ Dikelola oleh **[Yunus Zend](https://t.me/ZendYNS)** 👨‍💻
                         "👨‍💻 Creator 👨‍💻", url="https://t.me/ZendYNS"
                     ),
                     InlineKeyboardButton(
-                        "Channel 🔉", url="https://t.me/infoseputarbot"
+                        "Channel 🔉", url="https://t.me/TeamKingUserbot"
                     )]
             ]
         ),
