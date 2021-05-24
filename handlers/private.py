@@ -24,7 +24,7 @@ Dikelola oleh **[Yunus Zend](https://t.me/ZendYNS)** 👨‍💻
             [
                 [
                     InlineKeyboardButton(
-                        "🎧 Perintah 🎧", url="https://t.me/infoseputarbot/3")
+                        "🎧 Perintah 🎧", url="https://telegra.ph/Mighty-Music-V1-05-23")
                   ],[
                     InlineKeyboardButton(
                         "💭 Grup", url="https://t.me/KingUserbotSupport"
